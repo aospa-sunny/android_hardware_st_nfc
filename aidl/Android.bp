@@ -29,6 +29,9 @@ cc_binary {
         "Nfc.cpp",
         "hal_st21nfc.cc",
     ],
+    arch: {
+        arm: { cflags: ["-DST_LIB_32"] },
+    }
 }
 
 prebuilt_etc_xml {
